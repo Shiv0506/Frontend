@@ -1,0 +1,81 @@
+/* style.css - matches the screenshot-like UI */
+body {
+  background-color: #fafafa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.app {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.main-box {
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+  padding: 20px 30px;
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.left-side { flex: 3; }
+.left-side h2 { margin-bottom: 25px; color: #333; }
+.section {
+  margin-bottom: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+}
+.section h3 { font-size: 17px; margin-bottom: 15px; color: #333; }
+.movie-row, .slot-row, .seat-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.movie-column, .slot-column, .seat-column {
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease;
+  user-select: none;
+  text-align: center;
+}
+.movie-column:hover, .slot-column:hover, .seat-column:hover { background-color: #f6f6f6; }
+.movie-column-selected, .slot-column-selected, .seat-column-selected {
+  background-color: #e66b6b;
+  color: white;
+  border-color: #c94d4d;
+}
+.seat-column input {
+  width: 55px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  text-align: center;
+}
+.book-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #1b9aaa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.book-btn:hover { background-color: #157a88; }
+.right-side {
+  flex: 1.5;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+}
+.right-side h3 { font-size: 16px; margin-bottom: 15px; color: #444; }
+.detail-line { margin: 4px 0; font-size: 14px; font-family: monospace; }
+.status-message { margin-left: 15px; color: #c94d4d; font-weight: 500; }
