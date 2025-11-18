@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BookMyShow - Simple</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="main-box">
+      <div class="left-side">
+        <h2>Book that show!!</h2>
+
+        <div class="section">
+          <h3>Select A Movie</h3>
+          <div id="movies" class="movie-row"></div>
+        </div>
+
+        <div class="section">
+          <h3>Select a Time slot</h3>
+          <div id="slots" class="slot-row"></div>
+        </div>
+
+        <div class="section">
+          <h3>Select the seats</h3>
+          <div id="seats" class="seat-row"></div>
+        </div>
+
+        <button id="bookBtn" class="book-btn">Book Now</button>
+        <span id="status" class="status-message"></span>
+      </div>
+
+      <div class="right-side">
+        <h3>Last Booking Details:</h3>
+        <div id="lastBooking">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
