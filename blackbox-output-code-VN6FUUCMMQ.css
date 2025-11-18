@@ -1,0 +1,61 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+}
+
+.option {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.option.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.seat-type {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 150px;
+}
+
+.seat-type input {
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.last-booking {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
